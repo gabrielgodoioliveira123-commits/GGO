@@ -11,7 +11,7 @@ import zipfile
 # Keep the lexical path so a symlink or Windows junction cannot disappear
 # through resolve() before source-path checks run.
 ROOT = Path(__file__).absolute().parents[1]
-VERSION = '1.2.0'
+VERSION = '1.2.1'
 ARCHIVE = 'god-prompt.skill'
 ZIP_ARCHIVE = 'PromptGod-Go.zip'
 SOURCE_FILES = (

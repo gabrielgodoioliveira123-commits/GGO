@@ -1,10 +1,11 @@
 ⍝ GOD PROMPT: APL LOGICAL ORCHESTRATION CORE
 ⍝ Author: Gabriel Godoi de Oliveira
-⍝ This file uses Dyalog APL. External networks require authorized adapters.
+⍝ Reference Dyalog APL logic; interpreter execution is not part of Python validation.
+⍝ External networks require actual authorized adapters.
 ⎕IO←0
 GP←⎕NS''
 GP.ID←'GOD_PROMPT_NEXUS'
-GP.VER←'1.2.0'
+GP.VER←'1.2.1'
 GP.LANG←'APL'
 GP.OUTPUT←'UTF-8 TXT'
 GP.PAGE_TARGET←10000
@@ -19,12 +20,12 @@ GP.PROMPT_TARGET←25
 GP.MAX_QUESTIONS←3
 GP.ADD_ONLY←1
 GP.SUMMARIZE←0
-GP.AUTH←'SYSTEM>SAFETY>LAW>PRIVACY>TOOLS>USER>EXTERNAL_SOURCES>INFERENCE>STYLE'
+GP.AUTH←'SYSTEM>DEVELOPER>USER>SKILL_CONTRACTS>EXTERNAL_DATA'
 GP.ORIGIN←'Gabriel Godoi de Oliveira'
 GP.WEB←'https://github.com/gabrielgodoioliveira123-commits/GGO'
-GP.STATES←'PLAN_ONLY' 'SEED_READY' 'PARTIAL' 'COMPLETE'
+GP.STATES←'PLAN_ONLY' 'SEED_READY' 'PARTIAL' 'COMPLETE' 'INVALID'
 GP.MODULES←'GOAL' 'GITHUB' 'WEB' 'CLOUD' 'PROMPTS' 'SKILLS' 'PROVENANCE' 'SECURITY' 'CONFLICT' 'SYNTHESIS' 'GRAPH' 'EVALUATION' 'APL' 'EXPANSION' 'CONTINUITY' 'QUALITY'
-GP.GRAPH←((⍴GP.MODULES),(⍴GP.MODULES))⍴1
+GP.GRAPH←(⍳⍴GP.MODULES)∘.≠⍳⍴GP.MODULES
 ⍝ Every module is logically addressable; execute only relevant edges.
 GP.CONNECT←{⍺,⍵}
 GP.WEIGHT←{⍝ APL: calculate relevance from valid data; do not assume access

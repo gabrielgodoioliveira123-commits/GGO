@@ -1,0 +1,16 @@
+{
+  "goal": "Create an evidence-grounded workflow for reviewing academic writing while preserving the author's argument.",
+  "format": "APL",
+  "content_language": "English",
+  "target_pages": 1,
+  "words_per_page": 100,
+  "pages_per_txt": 1,
+  "density": "dense",
+  "cloud_urls": [],
+  "github_repos": [],
+  "constraints": [
+    "Preserve the author's thesis, evidence, qualifications, and intended meaning",
+    "Distinguish factual corrections from stylistic suggestions",
+    "Do not invent citations or access to unavailable sources"
+  ]
+}

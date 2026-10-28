@@ -1,6 +1,6 @@
 {
   "project": "PromptGod-Go (GGO)",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "creator": "Gabriel Godoi de Oliveira",
   "url": "https://github.com/gabrielgodoioliveira123-commits/GGO",
   "format_default": "APL",
@@ -44,21 +44,29 @@
     "engine/specialization_contracts.apl",
     "examples/EXAMPLE_NOTE.txt",
     "examples/GOD_PROMPT_SEED_EXAMPLE.txt",
+    "examples/page_001.txt",
     "examples/request.json",
+    "examples/request_quickstart.json",
     "examples/request_small.json",
     "references/architecture.md",
     "references/catalog.json",
     "references/connectors.md",
     "references/page-equivalence.md",
     "references/quality.md",
+    "references/troubleshooting.md",
     "scripts/build_apl_instructions.py",
     "scripts/build_release.py",
     "scripts/god_prompt.py",
     "scripts/install_skill.py",
     "scripts/make_catalog.py",
+    "scripts/package_integrity.py",
     "scripts/validate_skill.py",
     "scripts/verify_package.py",
+    "tests/test_cli_workflow.py",
     "tests/test_god_prompt.py",
-    "tests/test_release_packaging.py"
+    "tests/test_installation_integrity.py",
+    "tests/test_provider_fixtures.py",
+    "tests/test_release_packaging.py",
+    "tests/test_runtime_regressions.py"
   ]
 }

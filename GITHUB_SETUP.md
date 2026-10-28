@@ -35,7 +35,7 @@ python scripts/install_skill.py --user
 python scripts/install_skill.py --repo /path/to/your-project
 ```
 
-The first copies to `~/.agents/skills/god-prompt/`; the second to `<project>/.agents/skills/god-prompt/`. Existing targets require an explicit `--replace`. Compatible Codex hosts may also install from the GitHub URL through their skill installer. Other hosts have their own import support; the folder remains usable as explicitly supplied instruction material when automatic discovery is unavailable.
+The first copies to `~/.agents/skills/god-prompt/`; the second to `<project>/.agents/skills/god-prompt/`. Existing targets require an explicit `--replace`, which retains the old installation in a sibling backup directory. The installer copies only files whose complete inventory and hashes were verified. Compatible Codex hosts may also install from the GitHub URL through their skill installer. Other hosts have their own import support; the folder remains usable as explicitly supplied instruction material when automatic discovery is unavailable.
 
 ## Keep private work local
 

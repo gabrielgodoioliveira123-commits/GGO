@@ -2,7 +2,7 @@
 
 ## Objective
 
-Create a portable Agent Skill that accepts one end-user goal and optional cloud files, discovers suitable prompt strategies and expert skills, evaluates 300 distinct architectures and produces a substantial APL-script-shaped *textual instruction artifact*. The tool does not claim that APL itself can call Google Drive, GitHub, or language models unless an authorized adapter exists. `SKILL.md` is a launch manifest demanded by Agent Skills; `engine/god_prompt.apl` is the native APL core and generated output defaults to APL syntax with `⍝` comments.
+Create a portable Agent Skill that accepts one end-user goal and optional cloud files, discovers suitable prompt strategies and expert skills, evaluates 300 distinct architectures and produces a substantial APL-script-shaped *textual instruction artifact*. The tool does not claim that APL itself can call Google Drive, GitHub, or language models unless an authorized adapter exists. `SKILL.md` is a launch manifest demanded by Agent Skills; `engine/god_prompt.apl` is the APL reference core and generated output defaults to APL syntax with `⍝` comments.
 
 ## Pipeline / modules
 
@@ -35,7 +35,7 @@ The default goal is 10,000 Word-equivalent pages at 500 substantive words/page, 
 
 ## Limits and verifiable statuses
 
-`PLAN_ONLY`: input manifest recorded. `SEED_READY`: corpus index, 300 candidate configs, winning heuristic and APL seed built. `PARTIAL`: at least one completed model-generated page exists but below target. `COMPLETE`: target substantive page count met and audit clean. A local `--mock` test never advances status. Network inaccessible / no access / costs / API quotas / insufficient copyright permission are explicit blockers. Never suppress them.
+`PLAN_ONLY`: input manifest recorded. `SEED_READY`: corpus index, 300 candidate configs, winning heuristic and APL seed built. `PARTIAL`: at least one completed host-written or model-generated page exists but the target has not been met. `COMPLETE`: the target page count is met and the current audit is clean. `INVALID`: source, seed, or page integrity failed; restore the affected files and rerun audit before continuing. `build` embeds the complete packaged workflow and original contracts, and imported source text stays in a separate corpus. Adding sources invalidates the seed until rebuilt; source changes after page creation require a new project. Export and state updates use staged writes with rollback for ordinary write failures, preserve unowned files, and reject edited prior exports. Project mutation commands use operating-system locks released on process exit. A local `--mock` test never advances status. Network inaccessible / no access / costs / API quotas / insufficient copyright permission are explicit blockers. Never suppress them.
 
 ## Portability
 

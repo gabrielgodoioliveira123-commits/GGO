@@ -41,12 +41,16 @@ Download or clone the **complete repository**, including its subdirectories. The
 git clone https://github.com/gabrielgodoioliveira123-commits/GGO.git
 cd GGO
 python scripts/god_prompt.py estimate --pages 10000 --words-per-page 500 --pages-per-txt 100
-python scripts/god_prompt.py init --request examples/request_small.json --out output/my-project
+python scripts/god_prompt.py doctor
+python scripts/god_prompt.py init --request examples/request_quickstart.json --out output/my-project
+python scripts/god_prompt.py ingest --project output/my-project examples/EXAMPLE_NOTE.txt
 python scripts/god_prompt.py build --project output/my-project
+python scripts/god_prompt.py add-page --project output/my-project --file examples/page_001.txt
+python scripts/god_prompt.py export --project output/my-project --assemble
 python scripts/god_prompt.py audit --project output/my-project
 ```
 
-On Windows, use `py` instead of `python` if that is how your Python installation is exposed. `build` creates a seed, 300 ranked candidate records, a logical interaction graph, and a separate source corpus. It does not generate the requested pages. A freshly built project has status `SEED_READY` and zero completed substantive pages. Choose a new output directory for each project; `init` refuses to overwrite an existing manifest.
+Use `py` on Windows or `python3` on macOS/Linux if that is your Python command. This offline example imports a real bundled sample page; it does not call a model or claim that the sample was generated for a new task. Its one-page target reaches `COMPLETE` after a clean audit. `build` alone creates the full packaged workflow and contract seed, 300 ranked candidate records, a logical graph, and a separate source corpus, with status `SEED_READY` and zero additional substantive pages. Choose a new empty output directory for each project; existing files are preserved.
 
 ## Install as a skill
 
@@ -55,7 +59,7 @@ python scripts/install_skill.py --user
 python scripts/install_skill.py --repo /path/to/your-project
 ```
 
-Choose one installation scope. The user installation goes to `~/.agents/skills/god-prompt/`; the repository installation goes to `<project>/.agents/skills/god-prompt/`. Existing installations are preserved unless `--replace` is explicitly supplied. Compatible hosts can also load the folder directly. Hosts without Agent Skills support can use `SKILL.md` and the APL files as explicitly supplied instructions. Application support varies.
+Choose one installation scope. The user installation goes to `~/.agents/skills/god-prompt/`; the repository installation goes to `<project>/.agents/skills/god-prompt/`. The installer verifies the complete source inventory before writing. `--replace` preserves the previous installation in a sibling backup and rolls back an ordinary final-copy failure. Compatible hosts can also load the folder directly. Hosts without Agent Skills support can use `SKILL.md` and the APL files as explicitly supplied instructions. Application support varies.
 
 Both [PromptGod-Go.zip](PromptGod-Go.zip) and [god-prompt.skill](god-prompt.skill) contain the same complete `god-prompt/` source folder in ZIP format. Extract it with a ZIP reader if the host does not import `.skill` files. Use `SHA256_RELEASE.txt` to check the archive and `SHA256SUMS` to check extracted source files. See [GITHUB_SETUP.md](GITHUB_SETUP.md) for installation and publication details.
 
@@ -111,7 +115,7 @@ python scripts/god_prompt.py export --project output/my-project --assemble
 python scripts/god_prompt.py audit --project output/my-project
 ```
 
-The page must meet the configured substantive-word threshold. The tool checks hashes, page order, word counts, and similarity to the preceding page. Automated checks do not replace factual and editorial review. `export` writes only existing verified pages and records requested versus delivered counts in `volumes/INDEX.json`. `--assemble` also writes one combined TXT; consider the practical size before choosing this for a very large work. Failed source-integrity checks preserve previously exported volumes.
+The page must meet the configured substantive-word threshold. The tool checks source/page hashes, page order, word counts, exact normalized duplicates across completed pages, and similarity to the preceding page. Automated checks do not replace factual and editorial review. `export` writes only existing verified pages and records requested versus delivered counts in `volumes/INDEX.json`. `--assemble` also writes one combined TXT; consider the practical size before choosing this for a very large work. Failed source-integrity checks preserve previously exported volumes.
 
 Optional API expansion may incur charges. Supply your own authorized `OPENAI_API_KEY` through the environment and select a model actually enabled for your API account:
 
@@ -119,7 +123,7 @@ Optional API expansion may incur charges. Supply your own authorized `OPENAI_API
 python scripts/god_prompt.py expand --project output/my-project --provider openai --model YOUR_MODEL --pages 3
 ```
 
-`--pages` limits attempts in that invocation. This uses the OpenAI Responses API; it is not required for offline commands or `add-page`. No API credentials are included. `--mock` demonstrates control flow and credits zero pages; it is not a completed generation.
+`--pages` limits accepted pages in that invocation, with at most three content-validation attempts per page. Network or provider failures stop the command. An explicit `--max-output-tokens` cap can override the default per-response token budget; actual limits and charges depend on your account and model. This uses the OpenAI Responses API; it is not required for offline commands or `add-page`. No API credentials are included. `--mock` demonstrates control flow and credits zero pages; it is not a completed generation.
 
 Change a future target or volume grouping and resume:
 
@@ -156,15 +160,15 @@ python scripts/verify_package.py
 python scripts/build_release.py --check
 ```
 
-After intentional source changes, run `python scripts/build_release.py`, repeat validation, and commit the updated manifest, checksums, and archive together. The CI workflow checks the same offline behavior. Source files use LF line endings to keep release hashes portable across operating systems.
+After intentional source changes, run `python scripts/build_release.py`, repeat validation, and commit the updated manifest, checksums, and archive together. CI covers Linux with Python 3.10 and 3.12, Windows with Python 3.12, and macOS with Python 3.12. Tests include real offline CLI subprocesses and operating-system locks, rollback failure fixtures, installer backups, malformed packages, and simulated provider responses. They make no paid model calls. Source files use LF line endings to keep release hashes portable across operating systems.
 
 ## Research, attribution, and limits
 
 The 25 strategies are original formulations. The 38 catalog entries are external references; the supplied v1.1.0 kit records 26 skill headers checked on October 27, 2026. This is historical metadata, not a claim that every link was checked again in this release. Review current complete sources and their licenses before reuse. No third-party implementation is bundled through the catalog.
 
-The 300 variants are deterministic heuristic designs, not 300 independent model experiments or a universal best-prompt benchmark. Sixteen declarative modules describe behavior; they do not prove a live connection exists. Prompt quality depends on the model, task, sources, and review. The skill asks no more than three initial questions, skips already answered questions, preserves substantive requirements, and distinguishes `PLAN_ONLY`, `SEED_READY`, `PARTIAL`, and audited `COMPLETE` states.
+The 300 variants are deterministic heuristic designs, not 300 independent model experiments or a universal best-prompt benchmark. Sixteen declarative modules describe behavior; they do not prove a live connection exists. Prompt quality depends on the model, task, sources, and review. The skill asks no more than three initial questions, skips already answered questions, preserves substantive requirements, and distinguishes `PLAN_ONLY`, `SEED_READY`, `PARTIAL`, audited `COMPLETE`, and `INVALID` states.
 
-Credits stay in repository metadata rather than being added as advertising to every generated prompt. Do not publish private imported documents, personal output folders, or credentials. See [SECURITY.md](SECURITY.md), [CONTRIBUTING.md](CONTRIBUTING.md), and [references/quality.md](references/quality.md).
+Credits stay in repository metadata rather than being added as advertising to every generated prompt. Do not publish private imported documents, personal output folders, or credentials. See [SECURITY.md](SECURITY.md), [CONTRIBUTING.md](CONTRIBUTING.md), [references/quality.md](references/quality.md), and [troubleshooting](references/troubleshooting.md).
 
 ## Community
 

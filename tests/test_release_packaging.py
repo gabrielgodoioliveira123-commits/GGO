@@ -22,7 +22,7 @@ class TestReleasePackaging(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
-        self.parent = Path(self.tmp.name)
+        self.parent = Path(self.tmp.name).resolve()
         self.root = self.parent/'checkout'
         self.root.mkdir()
         for relative in release.SOURCE_FILES:

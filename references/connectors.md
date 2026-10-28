@@ -31,3 +31,11 @@ python scripts/god_prompt.py harvest --project output/project --online --max-fil
 ```
 
 This command examines public skill file frontmatter and hash only; catalog coverage does not imply a skill is installed. `GITHUB_TOKEN` is optional for public API usage and required for some authenticated operations. Rate limits apply.
+
+## Optional model expansion and data sent
+
+`expand` sends the user goal, full packaged skill/contract seed, constraints, bounded authorized source excerpts, and the preceding page's tail to the selected OpenAI model. Use it only when you are authorized to send that content. The client requests `store: false`; account and service data policies remain separate. See the [official conversation-state documentation](https://developers.openai.com/api/docs/guides/conversation-state).
+
+Only a completed response with valid text can become a page. Incomplete, empty, malformed, or failed responses credit no page. Content validation permits at most three attempts for a page; network/provider failures stop the invocation so already recorded pages can be resumed. No test fixture proves live account access or model quality.
+
+For a model that needs a larger reasoning/output budget, choose `--max-output-tokens` explicitly (or `max_output_tokens` in request JSON). Raising this cap can increase charges and is subject to the actual model's limits. Context size must accommodate the full seed and excerpts. See the [official incomplete-response guidance](https://developers.openai.com/api/docs/guides/reasoning). The CLI does not silently discard the full contract library to make a request fit.

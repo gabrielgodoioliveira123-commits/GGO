@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "Oliveira"
     given-names: "Gabriel Godoi de"
-version: 1.2.0
+version: 1.2.1
 date-released: 2026-10-28
 url: "https://github.com/gabrielgodoioliveira123-commits/GGO"
 license: MIT
