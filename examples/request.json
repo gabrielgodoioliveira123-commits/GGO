@@ -1,0 +1,16 @@
+{
+  "goal": "Create a God Prompt for designing and auditing a 2.5D RPG with a 16-bit aesthetic, integrated settings, narrative, characters, systems, and tests.",
+  "format": "APL",
+  "target_pages": 10000,
+  "pages_per_txt": 100,
+  "density": "dense",
+  "words_per_page": 500,
+  "cloud_urls": [],
+  "github_repos": [],
+  "constraints": [
+    "Preserve supplied requirements without silent omissions",
+    "Use verifiable evidence and report unavailable sources",
+    "Avoid redundancy and filler"
+  ],
+  "content_language": "English"
+}

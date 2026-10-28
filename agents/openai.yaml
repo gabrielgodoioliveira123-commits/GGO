@@ -1,0 +1,4 @@
+interface:
+  display_name: "PromptGod-Go (GGO)"
+  short_description: "Configurable APL/TXT prompts with sourced research"
+  default_prompt: "Use $god-prompt to build a source-grounded APL prompt in English for my goal, with configurable Word-equivalent pages and TXT volumes."

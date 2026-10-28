@@ -1,0 +1,2 @@
+34d6dc5a26b92b363eff20cf1544cfc9a4029a5c10880ac15aafbe237651db61  god-prompt.skill
+34d6dc5a26b92b363eff20cf1544cfc9a4029a5c10880ac15aafbe237651db61  PromptGod-Go.zip

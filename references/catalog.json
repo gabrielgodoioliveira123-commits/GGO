@@ -1,0 +1,657 @@
+{
+  "verified_skill_headers": 26,
+  "schema": "god-prompt-research-v1",
+  "date_created": "2026-10-27",
+  "note": "Historical v1.1.0 kit snapshot: 26 skill headers recorded as checked on 2026-10-27; not reverified by this generator. No full skill code copied; no empirical best-in-world ranking.",
+  "skill_candidates": [
+    {
+      "id": "openai/skills:skill-creator",
+      "name": "skill-creator",
+      "repo": "openai/skills",
+      "path": "skills/.system/skill-creator/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.system/skill-creator/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "openai/skills:skill-installer",
+      "name": "skill-installer",
+      "repo": "openai/skills",
+      "path": "skills/.system/skill-installer/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.system/skill-installer/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "openai/skills:openai-docs",
+      "name": "openai-docs",
+      "repo": "openai/skills",
+      "path": "skills/.system/openai-docs/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.system/openai-docs/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "openai/skills:imagegen",
+      "name": "imagegen",
+      "repo": "openai/skills",
+      "path": "skills/.system/imagegen/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.system/imagegen/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "openai/skills:define-goal",
+      "name": "define-goal",
+      "repo": "openai/skills",
+      "path": "skills/.curated/define-goal/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.curated/define-goal/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "openai/skills:security-best-practices",
+      "name": "security-best-practices",
+      "repo": "openai/skills",
+      "path": "skills/.curated/security-best-practices/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.curated/security-best-practices/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "openai/skills:security-threat-model",
+      "name": "security-threat-model",
+      "repo": "openai/skills",
+      "path": "skills/.curated/security-threat-model/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.curated/security-threat-model/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "openai/skills:gh-fix-ci",
+      "name": "gh-fix-ci",
+      "repo": "openai/skills",
+      "path": "skills/.curated/gh-fix-ci/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.curated/gh-fix-ci/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "openai/skills:gh-address-comments",
+      "name": "gh-address-comments",
+      "repo": "openai/skills",
+      "path": "skills/.curated/gh-address-comments/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.curated/gh-address-comments/SKILL.md",
+      "status": "candidate-directory-listed",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "openai/skills:playwright",
+      "name": "playwright",
+      "repo": "openai/skills",
+      "path": "skills/.curated/playwright/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.curated/playwright/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "openai/skills:screenshot",
+      "name": "screenshot",
+      "repo": "openai/skills",
+      "path": "skills/.curated/screenshot/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.curated/screenshot/SKILL.md",
+      "status": "candidate-directory-listed",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "openai/skills:jupyter-notebook",
+      "name": "jupyter-notebook",
+      "repo": "openai/skills",
+      "path": "skills/.curated/jupyter-notebook/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.curated/jupyter-notebook/SKILL.md",
+      "status": "candidate-directory-listed",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "openai/skills:pdf",
+      "name": "pdf",
+      "repo": "openai/skills",
+      "path": "skills/.curated/pdf/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.curated/pdf/SKILL.md",
+      "status": "candidate-directory-listed",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "openai/skills:transcribe",
+      "name": "transcribe",
+      "repo": "openai/skills",
+      "path": "skills/.curated/transcribe/SKILL.md",
+      "url": "https://github.com/openai/skills/blob/main/skills/.curated/transcribe/SKILL.md",
+      "status": "candidate-directory-listed",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "anthropics/skills:skill-creator",
+      "name": "skill-creator",
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "anthropics/skills:doc-coauthoring",
+      "name": "doc-coauthoring",
+      "repo": "anthropics/skills",
+      "path": "skills/doc-coauthoring/SKILL.md",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/doc-coauthoring/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "anthropics/skills:mcp-builder",
+      "name": "mcp-builder",
+      "repo": "anthropics/skills",
+      "path": "skills/mcp-builder/SKILL.md",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/mcp-builder/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "anthropics/skills:webapp-testing",
+      "name": "webapp-testing",
+      "repo": "anthropics/skills",
+      "path": "skills/webapp-testing/SKILL.md",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/webapp-testing/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "anthropics/skills:frontend-design",
+      "name": "frontend-design",
+      "repo": "anthropics/skills",
+      "path": "skills/frontend-design/SKILL.md",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "anthropics/skills:claude-api",
+      "name": "claude-api",
+      "repo": "anthropics/skills",
+      "path": "skills/claude-api/SKILL.md",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/claude-api/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "anthropics/skills:docx",
+      "name": "docx",
+      "repo": "anthropics/skills",
+      "path": "skills/docx/SKILL.md",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/docx/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "anthropics/skills:pdf",
+      "name": "pdf",
+      "repo": "anthropics/skills",
+      "path": "skills/pdf/SKILL.md",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/pdf/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "anthropics/skills:pptx",
+      "name": "pptx",
+      "repo": "anthropics/skills",
+      "path": "skills/pptx/SKILL.md",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md",
+      "status": "candidate-directory-listed",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "anthropics/skills:xlsx",
+      "name": "xlsx",
+      "repo": "anthropics/skills",
+      "path": "skills/xlsx/SKILL.md",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
+      "status": "candidate-directory-listed",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "anthropics/skills:canvas-design",
+      "name": "canvas-design",
+      "repo": "anthropics/skills",
+      "path": "skills/canvas-design/SKILL.md",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/canvas-design/SKILL.md",
+      "status": "candidate-directory-listed",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "anthropics/skills:internal-comms",
+      "name": "internal-comms",
+      "repo": "anthropics/skills",
+      "path": "skills/internal-comms/SKILL.md",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/internal-comms/SKILL.md",
+      "status": "candidate-directory-listed",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "github/awesome-copilot:agent-architecture",
+      "name": "agent-architecture",
+      "repo": "github/awesome-copilot",
+      "path": "skills/agent-architecture/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/main/skills/agent-architecture/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "github/awesome-copilot:agent-governance",
+      "name": "agent-governance",
+      "repo": "github/awesome-copilot",
+      "path": "skills/agent-governance/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/main/skills/agent-governance/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "github/awesome-copilot:agent-owasp-compliance",
+      "name": "agent-owasp-compliance",
+      "repo": "github/awesome-copilot",
+      "path": "skills/agent-owasp-compliance/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/main/skills/agent-owasp-compliance/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "github/awesome-copilot:agent-supply-chain",
+      "name": "agent-supply-chain",
+      "repo": "github/awesome-copilot",
+      "path": "skills/agent-supply-chain/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/main/skills/agent-supply-chain/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "github/awesome-copilot:agentic-eval",
+      "name": "agentic-eval",
+      "repo": "github/awesome-copilot",
+      "path": "skills/agentic-eval/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/main/skills/agentic-eval/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "github/awesome-copilot:ai-prompt-engineering-safety-review",
+      "name": "ai-prompt-engineering-safety-review",
+      "repo": "github/awesome-copilot",
+      "path": "skills/ai-prompt-engineering-safety-review/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/main/skills/ai-prompt-engineering-safety-review/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "github/awesome-copilot:ai-team-orchestration",
+      "name": "ai-team-orchestration",
+      "repo": "github/awesome-copilot",
+      "path": "skills/ai-team-orchestration/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/main/skills/ai-team-orchestration/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "github/awesome-copilot:arize-prompt-optimization",
+      "name": "arize-prompt-optimization",
+      "repo": "github/awesome-copilot",
+      "path": "skills/arize-prompt-optimization/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/main/skills/arize-prompt-optimization/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "github/awesome-copilot:audit-integrity",
+      "name": "audit-integrity",
+      "repo": "github/awesome-copilot",
+      "path": "skills/audit-integrity/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/main/skills/audit-integrity/SKILL.md",
+      "status": "candidate-directory-listed",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "github/awesome-copilot:boost-prompt",
+      "name": "boost-prompt",
+      "repo": "github/awesome-copilot",
+      "path": "skills/boost-prompt/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/main/skills/boost-prompt/SKILL.md",
+      "status": "file-header-verified-2026-10-27",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "github/awesome-copilot:architecture-blueprint-generator",
+      "name": "architecture-blueprint-generator",
+      "repo": "github/awesome-copilot",
+      "path": "skills/architecture-blueprint-generator/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/main/skills/architecture-blueprint-generator/SKILL.md",
+      "status": "candidate-directory-listed",
+      "license": "check upstream per-file"
+    },
+    {
+      "id": "github/awesome-copilot:acquire-codebase-knowledge",
+      "name": "acquire-codebase-knowledge",
+      "repo": "github/awesome-copilot",
+      "path": "skills/acquire-codebase-knowledge/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/main/skills/acquire-codebase-knowledge/SKILL.md",
+      "status": "candidate-directory-listed",
+      "license": "check upstream per-file"
+    }
+  ],
+  "prompt_patterns": [
+    {
+      "id": "goal-contract",
+      "title": "Verifiable goal contract",
+      "rule": "what must the resulting model actually achieve?",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+        "https://ai.google.dev/gemini-api/docs/prompting-strategies"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "role-charter",
+      "title": "Role and jurisdiction",
+      "rule": "define expert roles and boundaries explicitly",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "clear-instructions",
+      "title": "Precise instructions",
+      "rule": "use imperative testable instructions",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "input-boundaries",
+      "title": "Context and instruction boundaries",
+      "rule": "distinguish untrusted data from instructions",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "few-shot",
+      "title": "Varied examples",
+      "rule": "supply representative positive examples",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+        "https://ai.google.dev/gemini-api/docs/prompting-strategies"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "negative-examples",
+      "title": "Negative examples and failures",
+      "rule": "show what counts as failure",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "structured-output",
+      "title": "Output contract",
+      "rule": "define format and required fields",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+        "https://ai.google.dev/gemini-api/docs/prompting-strategies"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "rubric",
+      "title": "Quality rubric",
+      "rule": "define weighted measurable acceptance criteria",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "evaluation",
+      "title": "Tests and evaluation",
+      "rule": "test with cases and baselines",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "retrieval",
+      "title": "Evidence-grounded retrieval",
+      "rule": "retrieve only relevant evidence with citations",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "decomposition",
+      "title": "Deliverable decomposition",
+      "rule": "stage complex work into auditable units",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "prompt-chaining",
+      "title": "Instruction chaining",
+      "rule": "feed verified outputs into the next stage",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "tool-use",
+      "title": "Tool selection and verification",
+      "rule": "call available tools only",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "source-provenance",
+      "title": "Traceable provenance",
+      "rule": "record exact origin and retrieval status",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "conflict-resolution",
+      "title": "Conflict resolution",
+      "rule": "use documented precedence and retain differences",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "multi-expert",
+      "title": "Cooperating specialists",
+      "rule": "route problems to appropriate expert modules",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "self-critique",
+      "title": "Fact-based review",
+      "rule": "inspect known gaps, not invented chain-of-thought",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "adversarial-evals",
+      "title": "Adversarial cases",
+      "rule": "test ambiguity, injection and contradictory sources",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "security",
+      "title": "Security and privacy",
+      "rule": "enforce least privilege and no secrets export",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "context-budget",
+      "title": "Context management",
+      "rule": "chunk inputs and maintain source map",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "incremental-generation",
+      "title": "Incremental generation",
+      "rule": "produce and validate each bounded chunk",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "continuity",
+      "title": "Project continuity",
+      "rule": "restore state from external manifest",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "delta-editing",
+      "title": "Preservative editing",
+      "rule": "merge additions without silent deletion",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "multi-format",
+      "title": "Format portability",
+      "rule": "keep native APL plus requested alternate outputs",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    },
+    {
+      "id": "fact-check",
+      "title": "Verification and limits",
+      "rule": "separate observed facts from hypotheses",
+      "source_refs": [
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ],
+      "rank": "unranked-candidate"
+    }
+  ],
+  "primary_references": [
+    {
+      "name": "OpenAI Prompt Engineering",
+      "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+      "kind": "official"
+    },
+    {
+      "name": "OpenAI Skills",
+      "url": "https://developers.openai.com/api/docs/guides/tools-skills",
+      "kind": "official"
+    },
+    {
+      "name": "Anthropic prompt engineering overview",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+      "kind": "official"
+    },
+    {
+      "name": "Google Gemini prompt strategies",
+      "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+      "kind": "official"
+    },
+    {
+      "name": "OpenAI skill creator",
+      "url": "https://github.com/openai/skills/blob/main/skills/.system/skill-creator/SKILL.md",
+      "kind": "official-repository"
+    },
+    {
+      "name": "Anthropic skill creator",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md",
+      "kind": "official-repository"
+    },
+    {
+      "name": "DAIR.AI prompt engineering guide",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "kind": "community-guide"
+    },
+    {
+      "name": "awesome ChatGPT prompts",
+      "url": "https://github.com/f/awesome-chatgpt-prompts",
+      "kind": "community-collection"
+    },
+    {
+      "name": "github awesome-copilot skills",
+      "url": "https://github.com/github/awesome-copilot/tree/main/skills",
+      "kind": "community-collection"
+    },
+    {
+      "name": "Agent Skills specification",
+      "url": "https://agentskills.io/specification",
+      "kind": "open-standard"
+    }
+  ]
+}

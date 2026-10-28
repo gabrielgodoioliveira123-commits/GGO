@@ -1,0 +1,18 @@
+name: Feature proposal
+description: Suggest a concrete improvement to PromptGod-Go.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior and acceptance criteria
+      description: Explain the outcome and how to verify it. Do not include private material.
+    validations:
+      required: true

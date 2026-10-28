@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+output/*
+!output/.gitkeep
+.env
+.env.*
+*.key
+*.secret
+*.pem
+*.log
+.DS_Store

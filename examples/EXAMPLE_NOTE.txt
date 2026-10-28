@@ -1,0 +1,5 @@
+APL SEED EXAMPLE (NOT A COMPLETED 10,000-PAGE PROMPT)
+GOD_PROMPT_SEED_EXAMPLE.txt demonstrates offline seed construction
+with 25 prompt strategies and 38 public skill references.
+Use init/build to create a project and its 300 candidate designs.
+Use expand or add-page for substantive pages, then export for TXT volumes.

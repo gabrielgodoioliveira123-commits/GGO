@@ -1,0 +1,15 @@
+{
+  "goal": "Create a God Prompt for reviewing academic writing without omitting important requirements.",
+  "format": "APL",
+  "target_pages": 3,
+  "words_per_page": 100,
+  "pages_per_txt": 2,
+  "density": "dense",
+  "cloud_urls": [],
+  "github_repos": [],
+  "constraints": [
+    "Preserve the author's arguments",
+    "Audit changes"
+  ],
+  "content_language": "English"
+}

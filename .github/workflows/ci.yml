@@ -1,0 +1,22 @@
+name: Python and Agent Skill checks
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate syntax and schema
+        run: python scripts/validate_skill.py
+      - name: Run portable offline tests
+        run: python -m unittest discover -s tests -v
+      - name: Verify package release hashes
+        run: python scripts/verify_package.py
+      - name: Check reproducible release package
+        run: python scripts/build_release.py --check
+      - name: Verify estimate mode
+        run: python scripts/god_prompt.py estimate --pages 10000 --words-per-page 500 --pages-per-txt 100
